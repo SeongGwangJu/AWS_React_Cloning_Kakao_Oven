@@ -8,10 +8,11 @@ import './App.css';
 import MainLayout from './components/layouts/MainLayout/MainLayout';
 import AccountSetting from './pages/AccountSetting/AccountSetting';
 import HelpDesk from './pages/HelpDesk/HelpDesk';
-import Projects from './pages/Projects/Projects';
 import { Reset } from 'styled-reset';
 import Header from './components/layouts/Header/Header';
 import Footer from './components/layouts/Footer/Footer';
+import MyProject from './pages/Projects/MyProject/MyProject';
+import SharedProject from './pages/Projects/SharedProject/SharedProject';
 
 function App() {
   return (
@@ -21,10 +22,10 @@ function App() {
       <Header />
       <MainLayout>
         <Routes>
-          <Route path="projects" element={ <Projects/> } />
-          <Route path="accountsetting" element={ <AccountSetting/>} />
-          <Route path="helpdesk" element={ <HelpDesk/>} />
-          
+          <Route path="/projects/my" element={ <MyProject/> } />
+          <Route path="/projects/shared" element={ <SharedProject /> } />
+          <Route path="/accountsetting" element={ <AccountSetting/>} />
+          <Route path="/helpdesk" element={ <HelpDesk/>} />
         </Routes>
       </MainLayout>
       <Footer />

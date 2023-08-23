@@ -1,19 +1,17 @@
-import React from 'react';
+import React, { useRef } from 'react';
 /** @jsxImportSource @emotion/react */
 import * as S from "./Style"
 import HeaderName from './HeaderName/HeaderName';
-function PageHeader( {title ,show} ) {
+import MainLayout from '../../layouts/MainLayout/MainLayout';
+import HeaderRight from './HeaderRight/HeaderRight';
+
+
+function PageHeader( {children, title} ) {
     return (
         <div css={S.SLayout}>
-            <HeaderName title={"프로젝트 대쉬보드"} />
-            <div show={"show"}>
-                <input type="text"></input>
-                <div>
-                    <input type="radio"></input>
-                    <input type="radio"></input>
-                </div>
-            </div>
-
+            <HeaderName title={title}  />
+            <HeaderRight title={title} />
+            {children}
         </div>
     );
 }

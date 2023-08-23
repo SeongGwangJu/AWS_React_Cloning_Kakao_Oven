@@ -9,6 +9,7 @@ export const SFooter = css`
     border-top: 1px solid #dbdbdb;
     width: 1170px;
     height: 60px;
+    font-size: 14px;
 `;
 export const SFooterLeft = css`
     align-self: center;

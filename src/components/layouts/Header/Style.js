@@ -22,6 +22,7 @@ export const SLogoBox = css`
     position: relative;
     height: 100%;
     align-items: center;
+    cursor: pointer;
 `;
 
 export const SLogo = css`
@@ -45,6 +46,7 @@ export const SNavBarBox  = css`
     font-size: 14px;
     font-weight: 400;
     color: white;
+    cursor: pointer;
 `;
 
 export const SNavImg = css`
@@ -62,5 +64,4 @@ export const SToggleIcon = css`
     margin-left: 10px;
     width: 15px;
     height: 15px;
-    color: white;
 `;
